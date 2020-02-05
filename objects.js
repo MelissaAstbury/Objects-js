@@ -21,4 +21,44 @@ let someObject = {
 };
 
 //console.log(someObject.friends[0]);
-console.log(someObject.friends[0].name);
+//console.log(someObject.friends[0].name);
+
+//***********************************
+//MOVIE DATA:
+
+let movies = [
+  {
+    title: "Titanic",
+    rating: 4,
+    year: 2004,
+    hasWatched: true
+  },
+  {
+    title: "Mango Jango",
+    rating: 3,
+    year: 2018,
+    hasWatched: false
+  },
+  {
+    title: "Peter Pan",
+    rating: 5,
+    year: 1997,
+    hasWatched: true
+  }
+];
+
+movies.forEach(movie => {
+  if (movie.hasWatched) {
+    console.log(`You have watched "${movie.title}" - ${movie.rating} stars`);
+    // console.log("You have watched", movie.title, movie.rating, "- stars");
+  } else {
+    console.log(
+      `You have not watched "${movie.title}" - ${movie.rating} stars`
+    );
+    // console.log("You have not watched", movie.title, movie.rating, "stars");
+  }
+  //   console.log(movie);
+  //   console.log(movies);
+});
+
+// console.log(movies);
